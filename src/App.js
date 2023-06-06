@@ -3,7 +3,7 @@
 //..........
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import {Home,Landing, Register, Error, ProtectedRoute} from './pages'
+import {Home,About, Projects, Contact, Error} from './pages'
 
 
 
@@ -16,8 +16,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/register' element={<Register/>}/>
-        <Route path='/landing' element={<Landing/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/projects' element={<Projects/>}/>
+        <Route path='/contact' element={<Contact/>}/>
         <Route path='*' element={<Error/>}/>
       </Routes> 
     </BrowserRouter>

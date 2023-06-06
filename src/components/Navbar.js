@@ -2,43 +2,43 @@
 //importing
 //..........
 import React,{useState} from 'react'
-import Wrapper from '../assets/wrappers/Navbar.js'
-import {
-  FaAlignLeft, FaUserCircle, FaCaretDown
-} from 'react-icons/fa'
 import {UseAppContext} from '../context/appContext.js'
-import Logo from './Logo.js'
+import logo from '../assets/images/khaled_logo.png'
+import Wrapper from '../assets/wrappers/Navbar.js'
+import { FaBars } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
+import {links} from '../utils/links.js'
+
+
 //..........
 //App
 //..........
 const Navbar = () => {
-  const [showLogout, setShowLogout]=useState(false)
-  const {toggleSidebar,logoutUser, user} = UseAppContext()
-  return (
+  return(
     <Wrapper>
       <div className="nav-center">
-        <button type='button' className='toggle-btn' onClick={toggleSidebar}>
-          <FaAlignLeft/>
-        </button>
-        <div>
-          <Logo/>
-          <h3 className="logo-text">dashboard</h3>
-        </div>
-        
-        <div className="btn-container">
-          <button type='button' className='btn' onClick={()=>setShowLogout(!showLogout)}>
-            <FaUserCircle/>
-            {user?.name}
-            <FaCaretDown/>
+        <div className="nav-header">
+          <Link to='/'>
+            <img src={logo} className='nav-logo' alt="logo" />
+          </Link>
+          <button type='button' className='nav-btn'>
+            <FaBars/>
           </button>
-          <div className={showLogout?"dropdown show-dropdown":"dropdown"}>
-            <button type='button' className='dropdown-btn' onClick={logoutUser}>
-              logout
-            </button>
-          </div>
         </div>
-      </div>
-      
+        <ul className='nav-links'>
+          {
+            links.map((i)=>{
+              const {id, text, path} = i
+              return(
+                <li key={id}>
+                  <a href={path}>{text}</a>
+                </li>
+              )
+            })
+          }
+        </ul>
+
+        </div>
     </Wrapper>
   )
 }

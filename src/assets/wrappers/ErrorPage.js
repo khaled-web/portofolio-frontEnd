@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
-const Wrapper = styled.main`
+const Wrapper = styled.main `
   text-align: center;
   img {
     max-width: 600px;
     display: block;
+    margin-top: 5rem;
     margin-bottom: 2rem;
   }
   display: flex;

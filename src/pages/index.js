@@ -1,13 +1,13 @@
 import Home from './Home'
-import Landing from './Landing';
-import Register from "./Register";
-import Error from './Error';
-import ProtectedRoute from './ProtectedRoute';
+import Error from './Error'
+import About from './About'
+import Projects from './Projects'
+import Contact from './Contact'
 
 export {
  Home,
- Landing,
- Register,
- Error,
- ProtectedRoute
+ About,
+ Projects,
+ Contact,
+ Error
 }
