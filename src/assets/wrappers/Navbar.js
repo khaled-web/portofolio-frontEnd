@@ -1,13 +1,15 @@
 import styled from 'styled-components'
 
 const NavbarStyled = styled.nav `
+.navbar-General{
   height: 5rem;
-  padding: 1rem;
+  padding: 2rem;
   display: grid;
   align-items: center;
   transition: var(--transition);
   /* filter: blur(30px); */
   z-index: -1;
+}
 
   .nav-center {
     width: 90vw;
@@ -72,6 +74,17 @@ const NavbarStyled = styled.nav `
   grid-template-columns: auto 1fr;
   align-items: center;
 }
+}
+
+/* fixed navbar */
+.navbar-fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--clr-white-1);
+  z-index: 2;
+  box-shadow: var(--light-shadow);
 }
 
 `

@@ -350,3 +350,23 @@ p {
   background: var(--clr-green-light);
 }
 
+.social-icons{
+  display: grid;
+  margin-top: 3rem;
+  color: var(--clr-primary-10);
+  width: 20rem;
+  grid-template-columns: repeat(5,1fr);
+  justify-content: center;
+}
+
+.social-icon{
+  font-size: 1.5rem;
+  color: var(--clr-black-6);
+  transition: var(--transition);
+}
+
+.social-icon:hover{
+  color: var(--clr-primary-5);
+}
+
+

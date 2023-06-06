@@ -14,8 +14,19 @@ import {links} from '../utils/links.js'
 //App
 //..........
 const Navbar = () => {
+  const [changeNav, setChangeNav]=useState(false)
+  const changeNavBar = ()=>{
+    if(window.scrollY>80){
+      setChangeNav(true)
+    }
+    else{
+      setChangeNav(false)
+    }
+  }
+
+  window.addEventListener('scroll', changeNavBar)
   return(
-    <Wrapper>
+    <Wrapper className={changeNav ?'navbar-fixed': 'navbar-General'}>
       <div className="nav-center">
         <div className="nav-header">
           <Link to='/'>
