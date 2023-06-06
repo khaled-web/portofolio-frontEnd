@@ -1,11 +1,18 @@
 import React from 'react'
-import {Navbar} from '../components'
+import {
+  Navbar,
+  Sidebar
+} from '../components'
 const Projects = () => {
-  return (
-    <main>
-      <Navbar/>
-      <h3>Projects page</h3>
-    </main>
+  return ( <
+    main >
+    <
+    Navbar / >
+    <
+    Sidebar / >
+    <
+    h3 > Projects page < /h3> <
+    /main>
   )
 }
 

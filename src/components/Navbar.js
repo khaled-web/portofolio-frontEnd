@@ -14,6 +14,7 @@ import {links} from '../utils/links.js'
 //App
 //..........
 const Navbar = () => {
+  const {openSideBar}=UseAppContext()
   const [changeNav, setChangeNav]=useState(false)
   const changeNavBar = ()=>{
     if(window.scrollY>80){
@@ -23,7 +24,6 @@ const Navbar = () => {
       setChangeNav(false)
     }
   }
-
   window.addEventListener('scroll', changeNavBar)
   return(
     <Wrapper className={changeNav ?'navbar-fixed': 'navbar-General'}>
@@ -32,7 +32,7 @@ const Navbar = () => {
           <Link to='/'>
             <img src={logo} className='nav-logo' alt="logo" />
           </Link>
-          <button type='button' className='nav-btn'>
+          <button type='button' className='nav-btn' onClick={()=>openSideBar()}>
             <FaBars/>
           </button>
         </div>

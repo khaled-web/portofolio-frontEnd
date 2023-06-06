@@ -70,7 +70,7 @@ Variables
   --clr-green-dark: #0f5132;
   --clr-green-light: #d1e7dd;
   --clr-black: #222;
-  --transition: all 0.3s linear;
+  --transition: all .5s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -348,25 +348,6 @@ p {
 .alert-success {
   color: var(--clr-green-dark);
   background: var(--clr-green-light);
-}
-
-.social-icons{
-  display: grid;
-  margin-top: 3rem;
-  color: var(--clr-primary-10);
-  width: 20rem;
-  grid-template-columns: repeat(5,1fr);
-  justify-content: center;
-}
-
-.social-icon{
-  font-size: 1.5rem;
-  color: var(--clr-black-6);
-  transition: var(--transition);
-}
-
-.social-icon:hover{
-  color: var(--clr-primary-5);
 }
 
 
