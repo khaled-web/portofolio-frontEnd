@@ -14,6 +14,7 @@ const NavbarStyled = styled.nav `
   .nav-center {
     width: 90vw;
     margin: 0 auto;
+    padding: 1rem;
     max-width: var(--max-width);
   }
   .nav-header {
