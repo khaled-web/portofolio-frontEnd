@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
 const NavbarStyled = styled.nav `
+  background-color: var(--clr-primary-10);
 .navbar-General{
   height: 5rem;
   padding: 2rem;
   display: grid;
   align-items: center;
   transition: var(--transition);
-  /* filter: blur(30px); */
   z-index: -1;
 }
 
@@ -79,11 +79,11 @@ const NavbarStyled = styled.nav `
 
 /* fixed navbar */
 .navbar-fixed{
+  background: var(--clr-white-1);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--clr-white-1);
   z-index: 2;
   box-shadow: var(--light-shadow);
 }

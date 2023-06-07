@@ -41,7 +41,7 @@ Variables
   --clr-primary-6: hsl(43, 89%, 70%);
   --clr-primary-7: hsl(43, 90%, 76%);
   --clr-primary-8: hsl(45, 86%, 81%);
-  --clr-primary-9: hsl(45, 90%, 88%);
+  --clr-primary-9: rgb(252, 238, 197);
   --clr-primary-10: hsl(45, 100%, 96%);
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
@@ -125,7 +125,7 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-white);
+  background: var(--clr-white-3);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;

@@ -6,6 +6,7 @@ import FormRowSelect from './FormRowSelect';
 import SearchContainer from './SearchContainer';
 import Loading from './Loading'
 import Sidebar from './SideBar'
+import Header from './Header'
 
 
 export {
@@ -16,5 +17,6 @@ export {
  FormRowSelect,
  SearchContainer,
  Loading,
- Sidebar
+ Sidebar,
+ Header
 }
