@@ -2,11 +2,10 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import {SocialMedia} from '../utils/links'
 import heroImg from '../assets/images/khaled-hero.jpg'
-import Wrapper from '../assets/wrappers/HeaderStyled'
 
 const Header = () => {
   return (
-  <Wrapper className='hero'>
+  <header className='hero'>
    <div className="section-center hero-center">
     <article className='hero-info'>
      <div className="underline"></div>
@@ -29,8 +28,8 @@ const Header = () => {
      <img src={heroImg} alt="hero" className='hero-photo'/>
     </article>
    </div>
-   
-  </Wrapper>
+  
+  </header>
   )
 }
 

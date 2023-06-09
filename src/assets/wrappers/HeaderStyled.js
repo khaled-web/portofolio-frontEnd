@@ -1,13 +1,12 @@
 import styled from 'styled-components'
 
 const HeaderStyled = styled.header `
- background-color: var(--clr-primary-10);
- padding-bottom: 5rem;
 .hero{
+  background-color: var(--clr-primary-10);
+  padding-bottom: 5rem;
  z-index: -1;
 }
 
- 
 .hero .underline{
   margin-bottom: 0.5rem;
   margin-left: 0;
@@ -15,10 +14,9 @@ const HeaderStyled = styled.header `
 
 
 .hero-center{
-  min-height: calc(100vh-5rem);
+  min-height: calc(100vh - 5rem);
   display: grid;
   place-items: center;
-  
 }
 
 .hero-info h4{

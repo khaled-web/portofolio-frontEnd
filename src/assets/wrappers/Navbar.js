@@ -1,48 +1,47 @@
 import styled from 'styled-components'
 
 const NavbarStyled = styled.nav `
-  background-color: var(--clr-primary-10);
+.nav-links{
+  display: none;
+}
+
 .navbar-General{
+  background-color: var(--clr-primary-10);
   height: 5rem;
-  padding: 2rem;
   display: grid;
   align-items: center;
   transition: var(--transition);
   z-index: -1;
 }
 
-  .nav-center {
-    width: 90vw;
-    margin: 0 auto;
-    padding: 1rem;
-    max-width: var(--max-width);
-  }
-  .nav-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* img {
-      width: 175px;
-      margin-left: -15px;
-    } */
-  }
-  .nav-logo{
+.nav-center{
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.nav-header{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.nav-logo{
   width: 17rem;
 }
-  .nav-toggle {
-    background: transparent;
-    border: transparent;
-    color: var(--clr-primary-5);
-    cursor: pointer;
-    svg {
-      font-size: 2rem;
-    }
-  }
-  .nav-links {
-    display: none;
-  }
+
+.nav-btn{
+  background: transparent;
+  border-color: transparent;
+  color: var(--clr-primary-5);
+  font-size: 2rem;
+  cursor: pointer;
+  justify-self: end;
+}
+
 @media screen and (min-width:768px){
-.nav{
+
+.navbar-General{
   background: var(--clr-primary-10);
 }
 
@@ -79,11 +78,11 @@ const NavbarStyled = styled.nav `
 
 /* fixed navbar */
 .navbar-fixed{
-  background: var(--clr-white-1);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  background: var(--clr-white-1);
   z-index: 2;
   box-shadow: var(--light-shadow);
 }

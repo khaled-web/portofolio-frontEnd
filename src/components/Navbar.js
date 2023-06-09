@@ -4,7 +4,6 @@
 import React,{useState} from 'react'
 import {UseAppContext} from '../context/appContext.js'
 import logo from '../assets/images/khaled_logo.png'
-import Wrapper from '../assets/wrappers/Navbar.js'
 import { FaBars } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import {links} from '../utils/links.js'
@@ -26,7 +25,7 @@ const Navbar = () => {
   }
   window.addEventListener('scroll', changeNavBar)
   return(
-    <Wrapper className={changeNav ?'navbar-fixed': 'navbar-General'}>
+    <nav className={changeNav ?'navbar-fixed': 'navbar-General'}>
       <div className="nav-center">
         <div className="nav-header">
           <Link to='/'>
@@ -48,9 +47,8 @@ const Navbar = () => {
             })
           }
         </ul>
-
         </div>
-    </Wrapper>
+    </nav>
   )
 }
 //..........

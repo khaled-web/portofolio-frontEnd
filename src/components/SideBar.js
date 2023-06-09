@@ -4,12 +4,10 @@ import {Link} from 'react-router-dom'
 import { FaTimes } from 'react-icons/fa'
 import {links,SocialMedia} from '../utils/links'
 import {UseAppContext} from '../context/appContext'
-import Wrapper from '../assets/wrappers/SidebarStyled'
 
 const SideBar = () => {
   const {isSidebarOpen,closeSideBar}=UseAppContext()
   return (
-    <Wrapper>
       <aside className={`${isSidebarOpen?'sidebar show-sidebar':'sidebar'}`}>
           <button className='close-btn' type='button' onClick={()=>closeSideBar()}>
             <FaTimes/>
@@ -36,7 +34,6 @@ const SideBar = () => {
           })}
         </ul>
       </aside>
-    </Wrapper>
   )
 }
 

@@ -2,7 +2,8 @@ import React from 'react'
 import {
   Navbar,
   Sidebar,
-  Header
+  Header,
+  About
 } from '../components'
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
       <Navbar/>
       <Sidebar/>
       <Header/>
+      <About/>
     </main>
   )
 }
