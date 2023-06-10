@@ -3,7 +3,9 @@ import {
   Navbar,
   Sidebar,
   Header,
-  About
+  About,
+  Services,
+  Projects
 } from '../components'
 
 const Home = () => {
@@ -13,6 +15,8 @@ const Home = () => {
       <Sidebar/>
       <Header/>
       <About/>
+      <Services/>
+      <Projects/>
     </main>
   )
 }

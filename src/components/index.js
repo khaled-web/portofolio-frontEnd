@@ -7,6 +7,8 @@ import Loading from './Loading'
 import Sidebar from './SideBar'
 import Header from './Header'
 import About from './About'
+import Services from './Services'
+import Projects from './Projects'
 
 
 export {
@@ -18,5 +20,7 @@ export {
  Loading,
  Sidebar,
  Header,
- About
+ About,
+ Services,
+ Projects
 }
