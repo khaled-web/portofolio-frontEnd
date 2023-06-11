@@ -10,10 +10,13 @@ import {
   FaTasks
 }
 from 'react-icons/fa'
-import img01 from '../assets/images/LayalinaCoffe-imag.jpeg'
-import img02 from '../assets/images/RightCars-Skills.jpeg'
-import img03 from '../assets/images/CozyHouse.jpeg'
-import img04 from '../assets/images/SandraTours-1.jpg'
+import layalinaImg from '../assets/images/LayalinaCoffe-imag.jpeg'
+import rightCarsImg from '../assets/images/RightCars-Skills.jpeg'
+import cozyHouseImg from '../assets/images/CozyHouse.jpeg'
+import sandraToursImg from '../assets/images/SandraTours-1.jpg'
+import familyRestaurantImg from '../assets/images/Family Restaurant.jpg'
+import teaMarketImg from '../assets/images/TeaMarket.jpg'
+
 
 export const links = [{
     id: 1,
@@ -93,29 +96,60 @@ export const projects = [
   {
     id:1,
     style:'project-1',
-    img:img01,
+    img:layalinaImg,
     title:'Layalina Coffee',
-    owner:'Ishaaq Ghawer'
+    owner:'Ishaaq Ghawer',
+    subject:'Layalina Coffee was conceived with the conviction that every espresso cup should stay true to its origin, whether prepared by a barista or by you.'
   },
   {
     id:2,
     style:'project-2',
-    img:img02,
+    img:rightCarsImg,
     title:'RightCars Agency',
     owner:'Dorian Aron',
+    subject:'RightCars agency provide a vast selection of new and used vehicles with affordable prices, exceptional car care, and customer service with a smile!'
   },
   {
     id:3,
     style:'project-3',
-    img:img03,
+    img:cozyHouseImg,
     title:'CozyHouse',
-    owner:'Tolstoy Leo'
+    owner:'Tolstoy Leo',
+    subject:'CozyHouse has a new vision to make the best of anything that they build as furniture because The design creates culture. Culture shapes values. Values determine the future.'
   },
   {
     id:4,
     style:'project-4',
-    img:img04,
+    img:sandraToursImg,
     title:'Sandra Tours',
-    owner:'Sandra Madyan'
+    owner:'Sandra Madyan',
+    subject:'This journey of research, bookings and travel purchases starts long before people step on the plane, sandra tours company gives you more information about tourism trips.'
+  },
+  {
+    id:5,
+    style:'project-5',
+    img:familyRestaurantImg,
+    title:'The Family Restaurant',
+    owner:'john William',
+    subject:'The family restaurant is operating from an understanding of the targets of customers to appeal directly to their needs and interests.'
+  },
+  {
+    id:6,
+    style:'project-6',
+    img:teaMarketImg,
+    title:'The Family Restaurant',
+    owner:'john William',
+    subject:'Drinking tea has many health benefits. tea can be a tasty beverage since it can be served iced or hot. , along with healthy teas, you should try.'
+  }
+]
+
+export const skills = [
+  {
+    title:'Front-End',
+    tools:['HTML', 'CSS/SCSS', 'JavaScript', 'React.js']
+  },
+  {
+    title:'Back-End',
+    tools:['Node.js', 'Express.js', 'MongoDB']
   }
 ]

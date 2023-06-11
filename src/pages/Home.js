@@ -5,7 +5,10 @@ import {
   Header,
   About,
   Services,
-  Projects
+  Projects,
+  Connect,
+  Skills,
+  Blog
 } from '../components'
 
 const Home = () => {
@@ -17,6 +20,9 @@ const Home = () => {
       <About/>
       <Services/>
       <Projects/>
+      <Connect/>
+      <Skills/>
+      <Blog/>
     </main>
   )
 }

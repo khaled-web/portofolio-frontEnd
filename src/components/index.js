@@ -9,6 +9,9 @@ import Header from './Header'
 import About from './About'
 import Services from './Services'
 import Projects from './Projects'
+import Connect from './Connect'
+import Skills from './Skills'
+import Blog from './Blog'
 
 
 export {
@@ -22,5 +25,8 @@ export {
  Header,
  About,
  Services,
- Projects
+ Projects,
+ Connect,
+ Skills,
+ Blog
 }

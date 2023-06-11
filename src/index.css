@@ -359,6 +359,7 @@ Navbar
   align-items: center;
   transition: var(--transition);
   z-index: -1;
+  padding: 1rem;
 }
 
 .nav-center{
@@ -745,7 +746,7 @@ Services
 }
 
 .back-text p{
-  font-size: 1rem;
+  font-size: .9rem;
   width: 23rem;
   font-weight: 700;
   color: var(--clr-black-1);
@@ -929,5 +930,309 @@ Projects
     grid-area: d;
   }
 }
+
+/*
+===============
+Connect
+===============
+*/
+.connect{
+  min-height: 40vh;
+  position: relative;
+  padding: 10rem 0 5rem 0;
+  margin: 5rem 0;
+  display: grid;
+  place-items: center;
+  clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 99%, 10% 100%, 0% 50%);
+}
+
+.video-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover ;
+  z-index: -2;
+}
+
+.connect::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--clr-white-1);
+  opacity: 0.7 ;
+  z-index: -1;
+}
+
+.video-banner{
+  background: var(--clr-primary-10);
+  padding: 3rem 5rem 12rem 5rem;
+  text-align: center;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
+.video-banner .section-title{
+  margin-bottom: 2rem;
+}
+
+.video-text{
+  width: 30rem;
+  color: var(--clr-black-1);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/*
+===============
+Skills
+===============
+*/
+
+.skills{
+  background: var(--clr-primary-10);
+}
+
+.skills-title{
+  margin-bottom: 5rem;
+}
+
+.skills-center{
+  margin-top: 0;
+  transform: translateY(-2rem);
+}
+
+.skills h3{
+  margin: 1.5rem 0;
+  color: var(--clr-primary-1);
+}
+
+.skill{
+  margin-bottom: 1.25rem;
+}
+
+.skill p{
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  color: var(--clr-primary-1);
+}
+
+.skill-container{
+  background: var(--clr-white-1);
+  height: 1rem;
+  width: 100%;
+  border-radius: var(--radius);
+  position: relative;
+}
+
+.skill-value{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--clr-primary-5);
+  height: 100%;
+  width: 80%;
+  border-radius: var(--radius);
+}
+
+.value-zero{
+  width: 0%;
+}
+
+.value-50{
+  width: 50%;
+}
+
+.value-60{
+  width: 60%;
+}
+
+.value-70{
+  width: 70%;
+}
+
+.value-80{
+  width: 80%;
+}
+
+.value-90{
+  width: 90%;
+}
+
+.value-100{
+  width: 100%;
+}
+
+
+.skill-text{
+  position: absolute;
+  top: -2rem;
+  left: 80%;
+}
+
+.skill-text-zero{
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  opacity: 0;
+}
+
+.skill-text-50{
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+}
+
+.skill-text-60{
+  position: absolute;
+  top: -2rem;
+  left: 60%;
+}
+
+.skill-text-70{
+  position: absolute;
+  top: -2rem;
+  left: 70%;
+}
+
+.skill-text-80{
+  position: absolute;
+  top: -2rem;
+  left: 80%;
+}
+
+.skill-text-90{
+  position: absolute;
+  top: -2rem;
+  left: 90%;
+}
+
+.skill-text-100{
+  position: absolute;
+  top: -2rem;
+  left: 95%;
+}
+
+.hidden-skill{
+  opacity: 1;
+}
+
+.skill-span{
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  animation: show-text 1s ease infinite;
+}
+
+@media screen and (min-width: 768px){
+  .skills-center{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+  }
+}
+
+
+/*
+===============
+Blog
+===============
+*/
+
+.blog{
+  background: var(--clr-grey-10);
+}
+
+.card{
+  height: 27rem;
+  position: relative;
+  /* talk later */
+  perspective: 1500px;
+  margin-bottom: 2rem;
+}
+
+.blog-center{
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+}
+
+.card-side{
+  transition: var(--transition-blog);
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius);
+}
+
+.card-front{
+  background: var(--clr-white-1);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+.card-front img{
+  height: 13rem;
+  object-fit: cover;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.card-info{
+  padding: 1rem 1.5rem;
+  margin-bottom: 0;
+}
+
+.card-footer{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  place-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transform: translateY(-1rem);
+}
+
+
+.card-footer img{
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card-footer p{
+  margin-bottom: 0;
+  text-transform: uppercase;
+  justify-self: end;
+  color: var(--clr-primary-5);
+  font-size: .85rem;
+}
+
+.card-back{
+  background: var(--clr-primary-10);
+  transform: rotateY(180deg);
+  display: grid;
+  place-items: center;
+}
+
+.card:hover .card-front{
+  transform: rotateY(-180deg);
+}
+
+.card:hover .card-back{
+  transform: translateY(0);
+}
+
+
+
 
 

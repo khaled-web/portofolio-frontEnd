@@ -16,7 +16,6 @@ const Projects = () => {
     <div className="section-center projects-center">
      {
       projects.map((project)=>{
-
        const {id, style, img, title, owner}=project
        return(
         <a key={id} href="/projects" className={`${style}`}>
@@ -29,7 +28,7 @@ const Projects = () => {
          </article>
         </a>
        )
-      })
+      }).slice(0,4)
      }
     </div>
    </section>
