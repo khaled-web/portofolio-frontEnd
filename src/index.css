@@ -1233,6 +1233,38 @@ Blog
 }
 
 
+/*
+===============
+Footer
+===============
+*/
+
+.footer{
+  padding: 0 auto;
+  background: var(--clr-black-5);
+  display: grid;
+  place-items: center;
+}
+
+.footer-icons{
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.footer-icon{
+  color: var(--clr-grey-10);
+  margin-right: 2rem;
+}
+
+.footer p{
+  color: var(--clr-primary-5);
+  font-size: 1.25rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+
+
 
 
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import {skills} from '../utils/links'
+
 const Skills = () => {
   return (
    <section className="section skills">
@@ -9,13 +10,13 @@ const Skills = () => {
     </div>
     <div className="section-center skills-center">
      {skills.map((i)=>{
-      const {title, tools} = i
+      const {id,title, tools} = i
       return(
-       <article>
+       <article key={id}>
         <h3>{title}</h3>
-        {tools.map((t)=>{
+        {tools.map((t,index)=>{
          return(
-          <div className="skill">
+          <div key={index} className="skill">
            <p>{t}</p>
            <div className="skill-container">
             <div className="skill-value value-100"></div>

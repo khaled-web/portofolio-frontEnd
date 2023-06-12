@@ -14,7 +14,7 @@ const Blog = () => {
         {projects.map((i)=>{
           const {id, img, title, subject}=i
           return(
-            <div className="card">
+            <div key={id} className="card">
               <div className="card-side card-front">
                 <img src={img} alt="singleItem"/>
                 <div className="card-info">

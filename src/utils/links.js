@@ -145,10 +145,12 @@ export const projects = [
 
 export const skills = [
   {
+    id:1,
     title:'Front-End',
     tools:['HTML', 'CSS/SCSS', 'JavaScript', 'React.js']
   },
   {
+    id:2,
     title:'Back-End',
     tools:['Node.js', 'Express.js', 'MongoDB']
   }
