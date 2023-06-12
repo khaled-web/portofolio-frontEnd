@@ -10,7 +10,7 @@ const Header = () => {
     <article className='hero-info'>
      <div className="underline"></div>
      <h1>I'm Khaled</h1>
-     <h4>Freelance Full-Stack Web Developer</h4>
+     <h4>Freelance MERN-Stack Web Developer</h4>
      <Link to='/contact' className='btn hero-btn'>hire me</Link>
 
      <ul className='social-icons'>

@@ -8,7 +8,8 @@ import {
   Projects,
   Connect,
   Skills,
-  Blog
+  Blog,
+  Footer
 } from '../components'
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
       <Connect/>
       <Skills/>
       <Blog/>
+      <Footer/>
     </main>
   )
 }

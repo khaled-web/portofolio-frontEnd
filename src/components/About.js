@@ -14,13 +14,14 @@ const About = () => {
      <div className="underline"></div>
     </div>
     <p>
-     I’m a Freelance Full-Stack Web Developer located in Egypt. I have a serious passion for UI effects, animations, and creating intuitive, dynamic user experiences.
+     I’ m a Freelance MERN - Stack Web Developer located in Egypt.I have a serious passion
+     for UI effects, animations, and creating intuitive, dynamic user experiences.
     </p>
     <p>
       Well-organized person, problem solver, independent employee with high attention to detail.
     </p>
     <p>
-    Interested in the entire Full-Stack spectrum and working on ambitious projects with positive people.
+    Interested in the entire MERN-Stack spectrum and working on ambitious projects with positive people.
     </p>
     </article>
   </div>

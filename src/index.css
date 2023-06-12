@@ -504,7 +504,7 @@ SideBar
 }
 
 .social-icon{
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--clr-black-6);
   transition: var(--transition);
 }
@@ -606,6 +606,10 @@ Hero
 
 .social-icon:hover{
   color: var(--clr-primary-5);
+}
+
+.sidebar-icon{
+  font-size: 2rem;
 }
 /*
 ===============
@@ -1247,13 +1251,14 @@ Footer
 }
 
 .footer-icons{
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
 .footer-icon{
   color: var(--clr-grey-10);
-  margin-right: 2rem;
+  margin-right: .5rem;
+  font-size: 2rem;
 }
 
 .footer p{

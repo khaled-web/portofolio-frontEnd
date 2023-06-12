@@ -12,6 +12,8 @@ import Projects from './Projects'
 import Connect from './Connect'
 import Skills from './Skills'
 import Blog from './Blog'
+import Footer from './Footer'
+
 
 
 export {
@@ -28,5 +30,6 @@ export {
  Projects,
  Connect,
  Skills,
- Blog
+ Blog,
+ Footer
 }

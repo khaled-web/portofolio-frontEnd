@@ -27,7 +27,7 @@ const SideBar = () => {
             const {id, url, icon}=i
             return(
               <li key={id}>
-                <a href={url} target="_blank" className="social-icon">{icon}
+                <a href={url} target="_blank" className="social-icon sidebar-icon">{icon}
                 </a>
               </li>
             )
