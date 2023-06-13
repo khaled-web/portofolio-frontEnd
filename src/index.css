@@ -1405,7 +1405,7 @@ form{
   margin: auto;
   flex-direction: column;
   /* padding: 1.5rem */
-  width: 75%;
+  width: 60%;
 }
 
 form input, form textarea, select{
@@ -1445,6 +1445,7 @@ form button:hover{
   width:25%;
   margin: auto;
   margin-top: 1rem;
+  font-size: 1.25rem;
 }
 
 
