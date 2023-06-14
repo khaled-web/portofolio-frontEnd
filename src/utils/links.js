@@ -40,25 +40,27 @@ export const links = [{
   }
 ]
 
-export const SocialMedia = [{
+export const SocialMedia = [
+  {
     id: 1,
-    url: 'https://www.facebook.com/',
-    icon: < FaFacebookSquare / >
+    url: 'https://www.linkedin.com/',
+    icon: < FaLinkedin/>
   },
   {
     id: 2,
-    url: 'https://www.linkedin.com/',
-    icon: < FaLinkedin / >
+    url: 'https://www.facebook.com/',
+    icon: < FaFacebookSquare/>
   },
+  
   {
     id: 3,
     url: 'https://www.twitter.com/',
-    icon: < FaTwitterSquare / >
+    icon: < FaTwitterSquare/>
   },
   {
     id: 4,
     url: 'https://www.instagram.com/',
-    icon: < FaInstagramSquare / >
+    icon: < FaInstagramSquare/>
   },
 ]
 
@@ -66,28 +68,28 @@ export const services = [{
     id: 1,
     title: "Front-End Development",
     subject: "Developing and implementing highly responsive user interface components using react concepts.",
-    icon: < FaLaptopCode / > ,
+    icon: < FaLaptopCode/> ,
     style: 'service-item-black'
   },
   {
     id: 2,
     title: "Back-End Development",
     subject: "Knowledge of backend technologies and database systems using Node.js and MongoDB.",
-    icon: < FaServer / > ,
+    icon: < FaServer/> ,
     style: 'service-item-white'
   },
   {
     id: 3,
     title: 'Testing',
     subject: 'Knowledge of performance testing frameworks including Mocha and Jest.',
-    icon: < FaTools / > ,
+    icon: < FaTools/> ,
     style: 'service-item-black'
   },
   {
     id: 4,
     title: 'Maintenance',
     subject: 'Troubleshooting interface software and debugging application codes.',
-    icon: < FaTasks / > ,
+    icon: < FaTasks/> ,
     style: 'service-item-white'
   }
 ]

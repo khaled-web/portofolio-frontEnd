@@ -1,7 +1,26 @@
-import React, {useRef} from 'react'
+import React, {useRef, useState} from 'react'
 import emailjs from '@emailjs/browser'
 import {Navbar,Sidebar,Footer} from '../components'
 const Contact = () => {
+  const [name, setName]=useState('')
+  const [email, setEmail]=useState('')
+  const [message, setMessage]=useState('')
+  /* handleName */
+  const handleName = (e)=>{
+    const getName = e.target.value
+    setName(getName)
+  }
+  /* handleEmail */
+  const handleEmail = (e)=>{
+    const getEmail=e.target.value
+    setEmail(getEmail)
+  }
+  /* handleMessage */
+  const handleMessage = (e)=>{
+    const getMessage = e.target.value
+    setMessage(getMessage)
+  }
+  /* emailjs */
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -11,6 +30,7 @@ const Contact = () => {
       }, (error) => {
           console.log(error.text);
       });
+    console.log(name, email, message)
   };
   return (
     <main>
@@ -22,12 +42,9 @@ const Contact = () => {
           <div className="underline"></div>
           <div className="section-center">
               <form ref={form} onSubmit={sendEmail}>
-                <input type="text" name="from_name" placeholder='name'/>
-                <input type="email" name="from_email" placeholder='email'/>
+                <input type="text" name="from_name" placeholder='name' onChange={(e)=>handleName(e)}/>
+                <input type="email" name="from_email" placeholder='email' onChange={(e)=>handleEmail(e)}/>
                 <textarea name="message" placeholder='Your message' id="" cols="30" rows="5"></textarea>
-                {/* <button type='submit' value="Send" >
-                  send
-                </button> */}
                 <input type="submit" value="Send" className='contact-send'/>
               </form>
           </div>
