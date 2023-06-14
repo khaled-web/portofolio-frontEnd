@@ -1423,7 +1423,7 @@ form input::placeholder, form textarea::placeholder{
   color: var(--clr-black-3);
 }
 
-form button{
+.contact-send{
   font-size: 1.6rem;
   margin: 2rem 0 0 0;
   background: var(--clr-white-1);
@@ -1434,19 +1434,17 @@ form button{
   border: 2px solid var(--clr-primary-5);
   cursor: pointer;
   text-transform: capitalize;
-}
-
-form button:hover{
-  background: var(--clr-primary-5);
-  color: var(--clr-black-3);
-}
-
-.contact-submit{
   width:25%;
   margin: auto;
   margin-top: 1rem;
   font-size: 1.25rem;
 }
+
+.contact-send:hover{
+  background: var(--clr-primary-5);
+  color: var(--clr-black-3);
+}
+
 
 
 
