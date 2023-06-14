@@ -5,21 +5,7 @@ const Contact = () => {
   const [name, setName]=useState('')
   const [email, setEmail]=useState('')
   const [message, setMessage]=useState('')
-  /* handleName */
-  const handleName = (e)=>{
-    const getName = e.target.value
-    setName(getName)
-  }
-  /* handleEmail */
-  const handleEmail = (e)=>{
-    const getEmail=e.target.value
-    setEmail(getEmail)
-  }
-  /* handleMessage */
-  const handleMessage = (e)=>{
-    const getMessage = e.target.value
-    setMessage(getMessage)
-  }
+
   /* emailjs */
   const form = useRef();
   const sendEmail = (e) => {
@@ -30,7 +16,6 @@ const Contact = () => {
       }, (error) => {
           console.log(error.text);
       });
-    console.log(name, email, message)
   };
   return (
     <main>
@@ -42,8 +27,8 @@ const Contact = () => {
           <div className="underline"></div>
           <div className="section-center">
               <form ref={form} onSubmit={sendEmail}>
-                <input type="text" name="from_name" placeholder='name' onChange={(e)=>handleName(e)}/>
-                <input type="email" name="from_email" placeholder='email' onChange={(e)=>handleEmail(e)}/>
+                <input type="text" name="from_name" placeholder='name'/>
+                <input type="email" name="from_email" placeholder='email'/>
                 <textarea name="message" placeholder='Your message' id="" cols="30" rows="5"></textarea>
                 <input type="submit" value="Send" className='contact-send'/>
               </form>
