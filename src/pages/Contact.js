@@ -19,7 +19,7 @@ const Contact = () => {
     <main>
       <Navbar/>
       <Sidebar/>
-      <section className="section projects-page page-100">
+      <section className="section projects-page contact-bcg">
         <div className="section-title projects-title">
           <h2>contact</h2>
           <div className="underline"></div>

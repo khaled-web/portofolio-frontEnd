@@ -7,7 +7,7 @@ const About = () => {
     <main>
       <Navbar/>
       <Sidebar/>
-      <section className="section projects about-bcg page-100">
+      <section className="section projects about-bcg">
         <div className="section-title projects-title">
           <h2>about</h2>
           <div className="underline"></div>
