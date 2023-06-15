@@ -1,5 +1,6 @@
 import React from 'react'
 import {services} from '../utils/links'
+import {Link} from 'react-router-dom'
 
 const Services = () => {
   return (
@@ -23,7 +24,7 @@ const Services = () => {
           <p>
            {subject}
           </p>
-          <a href="/projects" className='btn'> more details</a>
+          <Link to="/projects" className='btn'> more details</Link>
          </div>
         </article>
        )

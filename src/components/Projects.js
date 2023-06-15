@@ -1,5 +1,6 @@
 import React from 'react'
 import {projects} from '../utils/links'
+import {Link} from 'react-router-dom'
 
 
 
@@ -18,7 +19,7 @@ const Projects = () => {
       projects.map((project)=>{
        const {id, style, img, title, owner}=project
        return(
-        <a key={id} href="/projects" className={`${style}`}>
+        <Link key={id} to="/projects" className={`${style}`}>
          <article className='project'> 
           <img src={img} alt="project" className='project-img'/>
           <div className="project-info">
@@ -26,7 +27,7 @@ const Projects = () => {
            <p>{owner}</p>
           </div>
          </article>
-        </a>
+        </Link>
        )
       }).slice(0,4)
      }

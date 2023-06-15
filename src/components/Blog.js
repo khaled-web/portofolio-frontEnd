@@ -1,6 +1,7 @@
 import React from 'react'
 import {projects} from '../utils/links'
 import pic from '../assets/images/blogImg.png'
+import {Link} from 'react-router-dom'
 
 const Blog = () => {
   return (
@@ -28,7 +29,7 @@ const Blog = () => {
               </div>
 
               <div className="card-side card-back">
-                <a href="/projects" className='btn'>read more</a>
+                <Link to="/projects" className='btn'>read more</Link>
               </div>
             </div>
           )

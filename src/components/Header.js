@@ -18,7 +18,7 @@ const Header = () => {
        const {id, url, icon}=i
        return(
         <li key={id}>
-         <a href={url} target="_blank" className="social-icon">{icon}</a>
+         <a href={url} target="_blank" rel='noopener noreferrer' className="social-icon">{icon}</a>
         </li>
        )
       })}

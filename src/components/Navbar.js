@@ -41,7 +41,7 @@ const Navbar = () => {
               const {id, text, path} = i
               return(
                 <li key={id}>
-                  <a href={path}>{text}</a>
+                  <Link to={path}>{text}</Link>
                 </li>
               )
             })

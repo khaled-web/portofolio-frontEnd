@@ -1,6 +1,7 @@
 import React from 'react'
 import VideoCo from '../assets/video/connect.mp4'
 import AboutPoster from '../assets/images/About-me.jpg'
+import {Link} from 'react-router-dom'
 
 const Connect = () => {
   return (
@@ -17,9 +18,9 @@ const Connect = () => {
       <p className='video-text'>
          I'm interested in freelance opportunities - especially ambitious or large projects. however, if you have other request or question, don't hesitate to contact me.
       </p>
-      <a href="/contact" className='btn'>
+      <Link to="/contact" className='btn'>
        contact me
-      </a>
+      </Link>
      </div>
     </section>
   )
