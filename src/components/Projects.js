@@ -11,7 +11,7 @@ const Projects = () => {
     <h2>projects</h2>
     <div className="underline"></div>
     <p className='projects-text'>
-       Software projects almost always face roadblocks and complications, and being able to identify obstacles, solve issues quickly and efficiently, and get the job done properly and within the deadline is a key attribute for a full-stack developer.
+       Software projects almost always face roadblocks and complications, and being able to identify obstacles, solve issues quickly and efficiently, and get the job done properly and within the deadline is a key attribute for a MERN-stack developer.
     </p>
     </div>
     <div className="section-center projects-center">
