@@ -4,8 +4,7 @@ import {
  SIDEBAR_OPEN,
  SIDEBAR_CLOSE,
  TOGGLE_SIDEBAR,
- HANDLE_CHANGE,
- CLEAR_VALUES
+ REPLY_MESSAGE_SUCCESS
 } from './action'
 
 const reducer = (state, action) => {
@@ -28,6 +27,34 @@ const reducer = (state, action) => {
   return {
    ...state,
    isSidebarOpen: !state.isSidebarOpen
+  }
+ }
+ //clear alert
+ if (action.type === CLEAR_ALERT) {
+  return {
+   ...state,
+   showAlert: false,
+   alertType: '',
+   alertText: ''
+  }
+ }
+ //display alert
+ if (action.type === DISPLAY_ALERT) {
+  return {
+   ...state,
+   showAlert: true,
+   alertType: 'danger',
+   alertText: 'Please provide all values'
+  }
+ }
+ //serverMessageSuccess
+ if (action.type === REPLY_MESSAGE_SUCCESS) {
+  return {
+   ...state,
+   isLoading: false,
+   showAlert: true,
+   alertType: 'success',
+   alertText: 'I Will Contact You Soon...',
   }
  }
 
