@@ -1,5 +1,4 @@
-import React, {useState} from 'react'
-import logo from '../assets/images/khaled_logo.png'
+import React from 'react'
 import {Link} from 'react-router-dom'
 import { FaTimes } from 'react-icons/fa'
 import {links,SocialMedia} from '../utils/links'
@@ -17,7 +16,7 @@ const SideBar = () => {
             const {id, text, path}=link
             return(
               <li key={id}>
-                <a href={path} onClick={()=>closeSideBar()}>{text}</a>
+                <Link to={path} onClick={()=>closeSideBar()}>{text}</Link>
               </li>
             )
           })}
@@ -27,8 +26,9 @@ const SideBar = () => {
             const {id, url, icon}=i
             return(
               <li key={id}>
-                <a href={url} target="_blank" className="social-icon sidebar-icon">{icon}
-                </a>
+                {/* <a href={url} target="_blank" className="social-icon sidebar-icon">{icon}
+                </a> */}
+                <Link target="_blank" className="social-icon sidebar-icon" to={url}>{icon}</Link>
               </li>
             )
           })}
